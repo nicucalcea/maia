@@ -1,0 +1,23 @@
+project:
+  output-dir: output
+  execute-dir: project
+number-sections: false
+toc: true
+toc-location: left
+date: last-modified
+output:
+  html_document:
+    keep_md: false
+    keep_ipynb: false
+execute: 
+  cache: true
+format:
+  html:
+    theme:
+      light: simplex
+      dark: darkly
+    smooth-scroll: true
+    embed-resources: true
+    code-tools: true
+    code-fold: true
+    standalone: true

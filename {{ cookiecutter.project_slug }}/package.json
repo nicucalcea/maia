@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@observablehq/notebook-kit": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "notebooks preview --root analysis",
+    "build": "notebooks build --root analysis --out ../publish -- analysis/index.html"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "project_name": "New Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "project_short_description": "A short description of the project.",
+  "full_name": "Nicu Calcea",
+  "email": "github@nicu.md",
+  "language": ["None", "R", "Python", ["R", "Python"]],
+  "virtual_env": ["None", "uv"],
+  "notebook": ["None", "Quarto", "Jupyter", "Observable"],
+  "create_github": ["Yes", "No"],
+  "__prompts__": {
+    "project_name": "Project name",
+    "project_slug": "Project slug (used on GitHub)",
+    "project_short_description": "Short description of the project",
+    "full_name": "Your full name",
+    "email": "Your email address",
+    "language": "Programming language",
+    "virtual_env": "Virtual environment",
+    "notebook": "Notebook format"
+  }
+}
