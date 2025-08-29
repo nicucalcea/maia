@@ -2,11 +2,11 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@observablehq/notebook-kit": "^1.0.1"
+    "@observablehq/notebook-kit": "^1.2.0"
   },
   "scripts": {
-    "dev": "notebooks preview --root analysis",
-    "build": "notebooks build --root analysis --out ../publish -- analysis/index.html"
+    "dev": "notebooks preview --root notebooks",
+    "build": "notebooks build --root notebooks --out ../output -- notebooks/analysis.html"
   },
   "devDependencies": {
     "rimraf": "^5.0.5"
