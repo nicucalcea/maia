@@ -7,7 +7,6 @@
   "language": ["None", "R", "Python", ["R", "Python"]],
   "virtual_env": ["None", "uv"],
   "notebook": ["None", "Quarto", "Jupyter", "Observable"],
-  "create_github": ["Yes", "No"],
   "__prompts__": {
     "project_name": "Project name",
     "project_slug": "Project slug (used on GitHub)",
