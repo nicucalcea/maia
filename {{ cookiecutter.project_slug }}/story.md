@@ -5,4 +5,3 @@ abstract: "{{ cookiecutter.project_short_description }}"
 format: docx
 toc: false
 ---
-
