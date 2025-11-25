@@ -19,7 +19,7 @@ if "{{ cookiecutter.notebook }}" != "Jupyter":
 if "{{ cookiecutter.notebook }}" == "Observable":
     os.system('npm install')
 else:
-    Path("notebooks/analysis.html").unlink()
+    Path("notebooks/analysis.onb.html").unlink()
     Path("package.json").unlink()
 
 

@@ -1,0 +1,3 @@
+{% now 'local', '%Y-%m-%d' %}
+Started project #{{ cookiecutter.project_slug }}
+    {% now 'local', '%H:%M' %} - ?
