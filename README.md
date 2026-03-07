@@ -8,6 +8,12 @@ Navigate to the directory where you want to create a new project and run the fol
 uvx cookiecutter gh:nicucalcea/maia
 ```
 
+## Quarto branding
+
+Generated projects now include a SAMIZDATA `brand.yml` and matching PDF style files (`samizdata-pdf.tex`, `samizdata-before-body.tex`).
+
+Generated projects also include `logo.png` in the project root, picked up automatically by the PDF template.
+
 ## Structure
 
 Here's the current folder structure.

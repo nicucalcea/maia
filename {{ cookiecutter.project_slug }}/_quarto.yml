@@ -1,23 +1,41 @@
 project:
   output-dir: output
   execute-dir: project
-number-sections: false
-toc: true
-toc-location: left
-date: last-modified
-output:
-  html_document:
-    keep_md: false
-    keep_ipynb: false
-execute: 
+
+brand: _brand.yml
+
+execute:
   cache: true
+
 format:
   html:
     theme:
       light: simplex
       dark: darkly
+    number-sections: false
+    toc: true
+    toc-location: left
+    date: last-modified
     smooth-scroll: true
     embed-resources: true
     code-tools: true
     code-fold: true
     standalone: true
+  pdf:
+    pdf-engine: lualatex
+    titlepage: true
+    titlepage-color: "9f1853"
+    titlepage-text-color: "FFFFFF"
+    titlepage-rule-color: "FFFFFF"
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    linkcolor: samizdataaccent
+    urlcolor: samizdataaccent
+    citecolor: samizdatainfo
+    mainfont: Roboto
+    sansfont: Roboto
+    monofont: Roboto Mono
+    include-in-header: samizdata-pdf.tex
+    include-before-body: samizdata-before-body.tex

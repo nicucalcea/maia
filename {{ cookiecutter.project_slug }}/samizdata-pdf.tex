@@ -1,0 +1,40 @@
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage[automark]{scrlayer-scrpage}
+
+\definecolor{samizdataaccent}{HTML}{9F1853}
+\definecolor{samizdatainfo}{HTML}{0F62FE}
+\definecolor{samizdatatext}{HTML}{161616}
+\definecolor{samizdatabg}{HTML}{FAF9F6}
+
+\AtBeginDocument{\color{samizdatatext}}
+\pagecolor{samizdatabg}
+
+\clearpairofpagestyles
+\ihead{\IfFileExists{logo.png}{\includegraphics[height=0.7cm]{logo.png}}{\small\textcolor{samizdataaccent}{SAMIZDATA}}}
+\ohead{\small\color{samizdataaccent}\headmark}
+\cfoot{\small\color{samizdataaccent}\pagemark}
+\setlength{\headheight}{24pt}
+\pagestyle{scrheadings}
+
+\titleformat{\section}
+  {\Large\bfseries\color{samizdataaccent}}
+  {\thesection}
+  {0.75em}
+  {}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{samizdataaccent}}
+  {\thesubsection}
+  {0.75em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{samizdataaccent}}
+  {\thesubsubsection}
+  {0.75em}
+  {}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}

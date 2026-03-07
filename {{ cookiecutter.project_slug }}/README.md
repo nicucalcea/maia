@@ -9,6 +9,12 @@
 {% elif cookiecutter.notebook == 'Observable' %}To build the Observable Notebook run `npm run dev` to preview or `npm run build` to build it to the `output` directory.
 {% endif %}
 
+## SAMIZDATA report styling
+
+- This template includes `brand.yml` and PDF styling hooks for Quarto.
+- PDF reports use SAMIZDATA colors and typography by default.
+- `logo.png` is already included at project root and used in PDF output.
+
 ## Tracking time
 
 This project uses [klog](https://klog.jotaen.net/) to track time spent on it.
