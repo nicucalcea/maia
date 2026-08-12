@@ -12,7 +12,7 @@ uvx cookiecutter gh:nicucalcea/maia
 
 Choose `Svelte + Layer Cake` at the `interactive` prompt to generate a `visuals/` workspace. It pins an exact `@samizdata/graphics` version or Git tag, builds story-specific Svelte custom elements into one portable relative ES-module bundle, and copies only data explicitly allowlisted from `data/processed/web/`.
 
-The default `None` choice preserves the existing generated project. The graphics package currently defaults to the anticipated first tag, `github:samizdata-co/graphics#v0.0.1`; create and push that tag before using the default in production, or enter another explicitly reviewed tag.
+The default `None` choice preserves the existing generated project. The graphics package defaults to the immutable GitHub tag `github:samizdata-co/graphics#v0.0.1`; create that release before using the default in production, or enter another explicitly reviewed exact Git tag.
 
 Template checks can be run with `uv run -m unittest discover -s tests -v`. To also install, type-check and build the generated interactive workspace against a local graphics checkout, run:
 
