@@ -8,6 +8,19 @@ Navigate to the directory where you want to create a new project and run the fol
 uvx cookiecutter gh:nicucalcea/maia
 ```
 
+## Optional interactive graphics
+
+Choose `Svelte + Layer Cake` at the `interactive` prompt to generate a `visuals/` workspace. It pins an exact `@samizdata/graphics` version or Git tag, builds story-specific Svelte custom elements into one portable relative ES-module bundle, and copies only data explicitly allowlisted from `data/processed/web/`.
+
+The default `None` choice preserves the existing generated project. The graphics package currently defaults to the anticipated first tag, `github:samizdata-co/graphics#v0.0.1`; create and push that tag before using the default in production, or enter another explicitly reviewed tag.
+
+Template checks can be run with `uv run -m unittest discover -s tests -v`. To also install, type-check and build the generated interactive workspace against a local graphics checkout, run:
+
+```bash
+SAMIZDATA_GRAPHICS_PACKAGE=file:/path/to/graphics MAIA_TEST_FULL_BUILD=1 \
+  uv run -m unittest discover -s tests -v
+```
+
 ## Quarto branding
 
 Generated projects now include a SAMIZDATA `brand.yml` and matching PDF style files (`samizdata-pdf.tex`, `samizdata-before-body.tex`).
@@ -29,6 +42,7 @@ Here's the current folder structure.
 ├── notebooks                           # analysis of already cleaned data
 │   └── analysis.ext                    # Quarto, Jupyter or Observable notebook
 ├── output                              # publishable notebooks, dashboards, charts, stories, etc.
+├── visuals                             # optional Svelte + Layer Cake custom-element workspace
 ├── _quarto.yml                         # Quarto config
 ├── .gitignore                          # files to be ignored by version control
 ├── .Rprofile                           # (R) environment variables
