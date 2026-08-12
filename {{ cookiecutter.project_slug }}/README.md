@@ -11,7 +11,7 @@
 
 {% if cookiecutter.interactive == 'Svelte + Layer Cake' %}## Interactive graphics
 
-The `visuals/` workspace builds story-specific Svelte custom elements with Layer Cake and the pinned `@samizdata/graphics` package.
+The `visuals/` workspace builds story-specific Svelte custom elements with Layer Cake and the pinned `@samizdata/graphics` package. Its `pnpm-workspace.yaml` explicitly permits that Git dependency's `prepare` build.
 
 ```bash
 cd visuals
